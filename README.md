@@ -14,13 +14,21 @@ A compléter
 
 A compléter
 
-## 3. Mettre à jour son système et chosir ses mirroirs
+## 3. Mettre à jour son système et choisir ses mirroirs
 
 A compléter
 
 ## 4. Modifier le vm.max_map_count (à faire jusqu'à la version 22 de Linux Mint)
 
-A compléter
+Pour cela, il faut ouvrir un Terminal et taper : `sudo nano /etc/sysctl.conf`
+Dans ce fichier, il faut uniquement ajouter la ligne suivante : `vm.max_map_count=2147483642`
+Une fois fait, quitter le fichier en faisant `CTRL+X` et répondre oui pour sauvegarder.
+Maintenant, il suffit de rédemarrer le PC et le tour est joué !
+
+A noter qu'il est possible de vérifier que la valeur a bien été prise en compte en tapant dans un terminal la commande suivante : `sysctl vm.max_map_count`
+Ce qui devrait renvoyer cette réponse : `vm.max_map_count = 2147483642`
+
+Cette étape ne sera plus nécessaire avec la version 22.
 
 ## 5. Installer les logiciels
 
