@@ -10,15 +10,19 @@ Si besoin d'aide pour réaliser une clé bootable depuis Windows, vous pouvez co
 
 A compléter
 
-## 2. Mettre à jour son système et chosir ses mirroirs
+## 2. Installation des pilotes Nvidia
 
 A compléter
 
-## 3. Modifier le vm.max_map_count (à faire jusqu'à la version 22 de Linux Mint)
+## 3. Mettre à jour son système et chosir ses mirroirs
 
 A compléter
 
-## 4. Installer les logiciels
+## 4. Modifier le vm.max_map_count (à faire jusqu'à la version 22 de Linux Mint)
+
+A compléter
+
+## 5. Installer les logiciels
 
 Une logithèque est mise à disposition sur Linux Mint pour installer vos applications. Pour accéder à celle-ci, il vous faut aller dans dans le menu des applications (1) et cliquer sur cette icône (2) :
 
@@ -38,6 +42,16 @@ Les deux paquets vont fonctionner mais il est bon à noter de façons générale
 - Les paquets systèmes sont souvent plus vieux (mais certains comme steam ont un système de mise à jour indépendant) et fonctionnent avec ce qui est installé sur le système ou fait ajouter des composants à votre système pour tourner.
 - Les paquets flatpak tournent avec leur propre environnement et embarque tout avec eux (ce qui fait que leur taille est plus importante) et son fourni dans la dernière version stable publiée et fonctionnent de la même manière avec tous les distributions. Ils ont aussi l'avantage de faire venir la dernière version de Mesa, ce qui est intéressant quand on utilise de l'Intel / AMD. En revanche, ils ont un accès limité au système, ce qui sécurise d'un côté mais rend certaines actions plus compliquées, notamment l'accès aux disques secondaires (voir [page suivante](https://github.com/Gaming-Linux-FR/glf-astuces?tab=readme-ov-file#acc%C3%A8s-%C3%A0-un-second-disque-sur-steam-flatpak)).
 
-## 5. Désactivation de la composition des fenêtres pour de meilleures performance en jeu
+## 6. Désactivation de la composition des fenêtres pour de meilleures performance en jeu
 
-A compléter
+Pour cela, il faut ouvrir le menu des applications (1) et ouvrir les paramètres système (2) :
+
+![LM-desactivation-compo1](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/a4790345-ced0-459f-894b-7b4e79f649cf)
+
+Puis aller dans `Général` :
+
+![LM-desactivation-compo2](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/6abede6b-faba-48b8-a1e6-0409f5e3aa48)
+
+Puis cocher l'option ci-dessous :
+
+![LM-desactivation-compo3](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78)
