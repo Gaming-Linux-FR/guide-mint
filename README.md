@@ -44,14 +44,15 @@ A partir de là, vous pouvez parcourir la liste des applications proposées ou f
 
 ![LM-logitheque-steam](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/35f8db07-d685-44cd-b927-f59f5cf0816b)
 
-Ici, on peut voir plusieurs résultats et c'est les deux premiers qui vont nous intéresser. Le premier est un paquet système, c'est à dire un paquet dans les dépôts de la distribution et donc validé par celle-ci. Le second avec la mention "flatpak" est un paquet universel venant de flathub.
+Ici, on peut voir plusieurs résultats et c'est les deux premiers qui vont nous intéresser. Le premier est un paquet système, c'est à dire un paquet dans les dépôts de la distribution et donc valider par celle-ci. Le second avec la mention "flatpak" est un paquet universel venant de flathub.
 
 Les deux paquets vont fonctionner mais il est bon à noter de façons générales les points suivants :
 - Les paquets systèmes sont souvent plus vieux (mais certains comme steam ont un système de mise à jour indépendant) et fonctionnent avec ce qui est installé sur le système ou fait ajouter des composants à votre système pour tourner.
 - Les paquets flatpak tournent avec leur propre environnement et embarque tout avec eux (ce qui fait que leur taille est plus importante) et sont fournis dans la dernière version stable publiée et fonctionnent de la même manière avec tous les distributions. Ils ont aussi l'avantage de faire venir la dernière version de Mesa, ce qui est intéressant quand on utilise de l'Intel / AMD. En revanche, ils ont un accès limité au système, ce qui sécurise d'un côté mais rend certaines actions plus compliquées, notamment l'accès aux disques secondaires (voir [page suivante](https://github.com/Gaming-Linux-FR/glf-astuces?tab=readme-ov-file#acc%C3%A8s-%C3%A0-un-second-disque-sur-steam-flatpak)).
 
-## 6. Désactivation de la composition des fenêtres pour de meilleures performance en jeu
+## 6. Désactivation de la composition des fenêtres
 
+Désactiver la composition des fenêtres en plein écran (type jeu) permet d'avoir de meilleures performances.
 Pour cela, il faut ouvrir le menu des applications (1) et ouvrir les paramètres système (2) :
 
 ![LM-desactivation-compo1](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/a4790345-ced0-459f-894b-7b4e79f649cf)
