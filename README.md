@@ -2,7 +2,7 @@
 
 Le but de ce tuto est de vous aider à installer et configurer une Linux Mint afin de pouvoir l'utiliser pour du multimédia / Gaming.
 
-En construction... Sujet à aborder :
+En construction... Sujets à aborder :
 
 1. Comment créer une clé bootable depuis Windows
 2. Comment procéder à l'installation
