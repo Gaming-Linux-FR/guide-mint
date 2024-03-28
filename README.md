@@ -6,7 +6,7 @@ En construction... Sujets à aborder :
 
 ## 1. Comment procéder à l'installation
 
-Si besoin d'aide pour réaliser une clé bootable depuis Windows, vous pouvez consulter [cette page](https://github.com/Gaming-Linux-FR/glf-astuces/blob/main/README.md#comment-cr%C3%A9er-une-cl%C3%A9-bootable-depuis-windows).
+Si besoin d'aide pour réaliser une clé bootable depuis Windows, vous pouvez consulter [cette page](https://emmabuntus.org/installer-emmabuntus-de5/#Avec_loutil_Etcher).
 
 A compléter
 
