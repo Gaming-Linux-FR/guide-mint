@@ -16,7 +16,23 @@ A compléter
 
 ## 3. Mettre à jour son système et choisir ses mirroirs
 
-A compléter
+Les mises à jour système se font grâce à l'outil dont l'icône en forme de bouclier se trouve en bas de l'écran non loin de l'heure. Au premier démarrage, le boulier sera affiché comme cela : 
+![VirtualBox_Linux Mint fresh install_28_03_2024_19_29_26 (copie)](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/9b77ded4-318f-419c-ae66-d75bbe22197a)
+
+Cela signifie qu'une action est nécessaire pour maintenir à jour le système. En cliquant dessus, vous accéderez à l'outil et lors de la première ouverture, une page expliquant le fonctionnement de l'outil sera affichée et il faudra la valider. Une fois fait, l'outil va vérifier si des mises à jour sont disponibles et également proposer d'utiliser un miroir local :
+
+![VirtualBox_Linux Mint fresh install_28_03_2024_19_29_42-2](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/b3b0c487-4554-499d-b538-2def8cabf598)
+
+Ce qui est recommandé, notamment pour booster le téléchargement des paquets qui peut être assez lent avec les dépôts de base. En cliquant sur `Oui`, votre mot de passe sera demandé et vous aurez alors accès à l'outil `Sources de logiciels` (fenêtre de gauche) :
+
+![LM-mirroir-depot](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/be22803d-7772-4cb1-914b-ed59475da299)
+
+La fenêtre de droite qui permet de connaître le mirroir le plus rapide, apparaitra en cliquant simplement sur l'adresse d'un des mirroirs. 
+
+Le mieux est de prendre celui du haut en le sélectionnant et en validant par `Appliquer`. Une fois que c'est fait, un bandeau bleu apparaitra pour demander de rafraichir le cache APT, cliquez sur `Valider`. Vous pouvez maintenant fermer l'outil `Sources de logiciels` et procéder aux mises à jour. Si le bouclier passe au blanc comme ceci 
+![LM-bouclier-blanc](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/16e52cdf-1e43-468e-b7f7-148abbfa6aaf), c'est que tout est à jour ! Si la précédente icône apparait à nouveau, c'est tout simplement car de nouvelles mises à jour sont disponibles.
+
+Pour finir, dans le cas où vous n'auriez pas configuré un mirroir ou que vous souhaitez vérifier si les résultats ont changé, vous pouvez ouvrir l'outil `Sources de logiciels` via le menu `Edition > Sources de logiciels`.
 
 ## 4. Modifier le vm.max_map_count (à faire jusqu'à la version 22 de Linux Mint)
 
