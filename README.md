@@ -21,7 +21,9 @@ A compléter
 ## 4. Modifier le vm.max_map_count (à faire jusqu'à la version 22 de Linux Mint)
 
 Pour cela, il faut ouvrir un Terminal et taper : `sudo nano /etc/sysctl.conf`
+
 Dans ce fichier, il faut uniquement ajouter la ligne suivante : `vm.max_map_count=2147483642`
+
 Une fois fait, quitter le fichier en faisant `CTRL+X` et répondre oui pour sauvegarder.
 Maintenant, il suffit de rédemarrer le PC et le tour est joué !
 
@@ -48,7 +50,14 @@ Ici, on peut voir plusieurs résultats et c'est les deux premiers qui vont nous 
 
 Les deux paquets vont fonctionner mais il est bon à noter de façons générales les points suivants :
 - Les paquets systèmes sont souvent plus vieux (mais certains comme steam ont un système de mise à jour indépendant) et fonctionnent avec ce qui est installé sur le système ou fait ajouter des composants à votre système pour tourner.
-- Les paquets flatpak tournent avec leur propre environnement et embarque tout avec eux (ce qui fait que leur taille est plus importante) et sont fournis dans la dernière version stable publiée et fonctionnent de la même manière avec tous les distributions. Ils ont aussi l'avantage de faire venir la dernière version de Mesa, ce qui est intéressant quand on utilise de l'Intel / AMD. En revanche, ils ont un accès limité au système, ce qui sécurise d'un côté mais rend certaines actions plus compliquées, notamment l'accès aux disques secondaires (voir [page suivante](https://github.com/Gaming-Linux-FR/glf-astuces?tab=readme-ov-file#acc%C3%A8s-%C3%A0-un-second-disque-sur-steam-flatpak)).
+- Les paquets flatpak tournent avec leur propre environnement et embarque tout avec eux (ce qui fait que leur taille est plus importante) et sont fournis dans la dernière version stable publiée et fonctionnent de la même manière avec toutes les distributions. Ils ont aussi l'avantage de faire venir la dernière version de Mesa, ce qui est intéressant quand on utilise de l'Intel / AMD. En revanche, ils ont un accès limité au système, ce qui sécurise d'un côté mais rend certaines actions plus compliquées, notamment l'accès aux disques secondaires (voir [page suivante](https://github.com/Gaming-Linux-FR/glf-astuces?tab=readme-ov-file#acc%C3%A8s-%C3%A0-un-second-disque-sur-steam-flatpak)).
+
+Le choix pour l'application en exemple vous revient. Ceci dit, le flatpak sera de mise pour d'autres applications comme :
+
+- Heroic Launcher (pour l’Epic Games Store, GOG ou Amazon Prime Gaming) qui n'est proposé qu'en flatpak.
+- Lutris (Battle.net, Ubisoft Connect, EA App etc…) car le paquet système n'est pas à jour.
+
+A noter que pour bien paramétrer Steam, vous pouvez suivre le [tuto suivant](https://github.com/Gaming-Linux-FR/steam-post-install?tab=readme-ov-file#steam-linux-post-installation).
 
 ## 6. Désactivation de la composition des fenêtres
 
