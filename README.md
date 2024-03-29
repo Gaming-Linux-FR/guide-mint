@@ -2,6 +2,10 @@
 
 Bienvenue dans ce guide détaillé pour configurer Linux Mint, pour le multimédia et le gaming. Voici une approche étape par étape pour tirer le meilleur parti de votre système.
 
+--- 
+
+<br>
+
 ## Table des Matières
 
 1. [Installation et Configuration Initiale](#1-installation-et-configuration-initiale)
@@ -12,15 +16,19 @@ Bienvenue dans ce guide détaillé pour configurer Linux Mint, pour le multiméd
 6. [Optimisation des Performances de Jeu](#6-optimisation-des-performances-de-jeu)
 7. [Dépannage et Conseils](#7-dépannage-et-conseils)
 
----
+--- 
+
+<br>
 
 ## 1. Installation et Configuration Initiale
 
 L'installation de Linux Mint est la première étape vers une configuration optimisée pour le multimédia et le gaming. Nous avons préparé un tutoriel vidéo qui guide à travers les étapes d'installation, y compris la création d'une clé bootable sous Windows.
 
-**Vidéo en préparation**
+**Vidéo en préparation** 
 
----
+--- 
+
+<br>
 
 ## 2. Installation des Pilotes Nvidia
 
@@ -28,7 +36,9 @@ L'installation des pilotes Nvidia est essentielle pour garantir une performance 
 
 **guide en préparation**
 
----
+--- 
+
+<br>
 
 ## 3. Mise à Jour du Système et Choix des Miroirs
 
@@ -50,6 +60,10 @@ Après l'installation, la première étape consiste à mettre à jour votre syst
 
 ![Mise à jour effectuée](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/16e52cdf-1e43-468e-b7f7-148abbfa6aaf)
 
+--- 
+
+<br>
+
 ## 4. Modification du Paramètre vm.max_map_count
 
 Pour optimiser la compatibilité et les performances des jeux, sur les versions de Linux Mint antérieures à la 22, il est conseillé d'augmenter la valeur de `vm.max_map_count`.
@@ -62,7 +76,9 @@ echo 'vm.max_map_count=1048576' | sudo tee -a /etc/sysctl.conf
 
 Cette modification permet d'améliorer la gestion des ressources pour les jeux nécessitant un grand nombre de mappages de fichiers virtuels, essentiel pour une expérience de jeu fluide et sans interruption.
 
----
+--- 
+
+<br>
 
 ## 5. Installation de Logiciels pour Gaming
 
@@ -94,7 +110,9 @@ Chaque choix a ses avantages et inconvénients, et le meilleur dépend de vos be
 
 [**Guide STEAM** sur Linux](https://github.com/Gaming-Linux-FR/steam-post-install?tab=readme-ov-file#steam-linux-post-installation).
 
----
+--- 
+
+<br>
 
 ## 6. Optimisation des Performances de Jeu
 
@@ -110,16 +128,16 @@ Allez dans Général :
 
 Cochez l'option "Désactiver la composition pour les fenêtres en plien écran"
 
-![Option à cocher](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78)
+![Option à cocher](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78) <br><br><br>
 
----
+--- 
+
+<br>
 
 ## 7. Dépannage et Conseils
 
 Ce guide vise à offrir une introduction complète à l'utilisation de Linux Mint pour le gaming et le multimédia. Pour des problèmes spécifiques, n'hésitez pas à rejoindre notre discord : 
 
 [![Rejoignez notre Discord](https://img.shields.io/badge/Discord-Rejoignez%20notre%20serveur-blue?style=for-the-badge&logo=discord)](https://discord.gg/WCAKxxRA3t)
-
----
 
 Ce guide est destiné à être régulièrement mis à jour. Vos retours et contributions sont les bienvenus pour aider à enrichir cette ressource et assister d'autres utilisateurs dans leur expérience Linux Mint.
