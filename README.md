@@ -20,11 +20,15 @@ L'installation de Linux Mint est la première étape vers une configuration opti
 
 **Vidéo en préparation**
 
+---
+
 ## 2. Installation des Pilotes Nvidia
 
 L'installation des pilotes Nvidia est essentielle pour garantir une performance optimale dans vos jeux et applications.
 
 **guide en préparation**
+
+---
 
 ## 3. Mise à Jour du Système et Choix des Miroirs
 
@@ -58,6 +62,8 @@ echo 'vm.max_map_count=1048576' | sudo tee -a /etc/sysctl.conf
 
 Cette modification permet d'améliorer la gestion des ressources pour les jeux nécessitant un grand nombre de mappages de fichiers virtuels, essentiel pour une expérience de jeu fluide et sans interruption.
 
+---
+
 ## 5. Installation de Logiciels pour Gaming
 
 La logithèque de Linux Mint offre un accès à de nombreuses applications essentielles pour le gaming, comme Steam.
@@ -86,6 +92,8 @@ Chaque choix a ses avantages et inconvénients, et le meilleur dépend de vos be
 
 [**Guide STEAM** sur Linux](https://github.com/Gaming-Linux-FR/steam-post-install?tab=readme-ov-file#steam-linux-post-installation).
 
+---
+
 ## 6. Optimisation des Performances de Jeu
 
 Pour améliorer les performances en jeu, il est conseillé de désactiver la composition des fenêtres pour les applications en plein écran.
@@ -101,6 +109,8 @@ Allez dans Général :
 Cochez l'option "Désactiver la composition pour les fenêtres en plien écran"
 
 ![Option à cocher](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78)
+
+---
 
 ## 7. Dépannage et Conseils
 
