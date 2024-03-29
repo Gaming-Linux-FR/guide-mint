@@ -80,7 +80,9 @@ La logithèque de Linux Mint offre un accès à de nombreuses applications essen
 
 ![Recherche de Steam](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/35f8db07-d685-44cd-b927-f59f5cf0816b)
 
-Lors de l'installation de logiciels pour le gaming sur Linux Mint via la logithèque, vous rencontrerez souvent deux types de paquets pour une même application : les paquets système et les Flatpak. Voici une explication concise pour vous aider à choisir le plus adapté à vos besoins :
+Lors de l'installation de logiciels pour le gaming sur Linux Mint via la logithèque, vous rencontrerez souvent deux types de paquets pour une même application : les paquets système et les Flatpak. 
+
+Voici une explication concise pour vous aider à choisir le plus adapté à vos besoins :
 
 - **Paquets système** : Directement issus des dépôts officiels de la distribution, ils sont intégrés au système et peuvent ne plus être à jour. Pour certaines applications comme Steam, qui se mettent à jour indépendamment, cela ne pose pas de problème. Ces paquets utilisent les librairies déjà installées sur votre système.
   
