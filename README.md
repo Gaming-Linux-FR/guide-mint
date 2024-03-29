@@ -128,7 +128,7 @@ Allez dans Général :
 
 Cochez l'option "Désactiver la composition pour les fenêtres en plien écran"
 
-![Option à cocher](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78) <br><br><br>
+![Option à cocher](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78)
 
 --- 
 
