@@ -94,7 +94,11 @@ Pour améliorer les performances en jeu, il est conseillé de désactiver la com
 
 ![Désactivation de la composition](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/a4790345-ced0-459f-894b-7b4e79f649cf), 
 
-![Suite](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/6abede6b-faba-48b8-a1e6-0409f5e3aa48), 
+Allez dans Général :
+
+![Suite](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/6abede6b-faba-48b8-a1e6-0409f5e3aa48),
+
+Cochez l'option "Désactiver la composition pour les fenêtres en plien écran"
 
 ![Option à cocher](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78)
 
