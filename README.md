@@ -34,7 +34,31 @@ L'installation de Linux Mint est la première étape vers une configuration opti
 
 L'installation des pilotes Nvidia est essentielle pour garantir une performance optimale dans vos jeux et applications.
 
-**guide en préparation**
+
+- **Lancement du gestionnaire de pilotes**
+
+![Mint_Nvidia_Tool_1](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/72a5260e-0d15-4c98-bfef-be818e755455)
+
+
+- **Recherche des pilotes sur votre machine**
+
+![Mint_Nvidia_Tool_2](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/59adf9bc-aa95-4b69-a784-c76c28e72bc8)
+
+
+- **Liste des pilotes trouvés par le gestionnaire**
+  
+_Le pilote nouveau est sélectionné par défaut._
+
+![Mint_Nvidia_Tool_3](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/e1d204d1-cdca-4f4a-a0fb-3fef3c95061f)
+
+- **Sélectionnez la version du pilote désirée**
+
+![Mint_Nvidia_Tool_4](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/3ce5abc2-e73f-483e-82ba-3451f6a5926d)
+
+- **Le gestionnaire procède à l'installation et vous invite à redémarrer.**
+
+![Mint_Nvidia_Tool_5](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/62f3d086-5b2b-427d-bfe1-b1ee4b173a69)
+
 
 --- 
 
