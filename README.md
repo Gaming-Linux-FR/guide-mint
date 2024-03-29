@@ -1,91 +1,109 @@
-# guide-mint
+# Guide Complet Linux Mint pour Multimédia et Gaming
 
-Le but de ce tuto est de vous aider à installer et configurer une Linux Mint afin de pouvoir l'utiliser pour du multimédia / Gaming.
+Bienvenue dans ce guide détaillé pour configurer Linux Mint, pour le multimédia et le gaming. Voici une approche étape par étape pour tirer le meilleur parti de votre système.
 
-En construction... Sujets à aborder :
+## Table des Matières
 
-## 1. Comment procéder à l'installation
+1. [Installation et Configuration Initiale](#1-installation-et-configuration-initiale)
+2. [Installation des Pilotes Nvidia](#2-installation-des-pilotes-nvidia)
+3. [Mise à Jour du Système et Choix des Miroirs](#3-mise-à-jour-du-système-et-choix-des-miroirs)
+4. [Modification du Paramètre vm.max_map_count](#4-modification-du-paramètre-vmmax_map_count)
+5. [Installation de Logiciels pour Gaming](#5-installation-de-logiciels-pour-gaming)
+6. [Optimisation des Performances de Jeu](#6-optimisation-des-performances-de-jeu)
+7. [Dépannage et Conseils](#7-dépannage-et-conseils)
 
-Si besoin d'aide pour réaliser une clé bootable depuis Windows, vous pouvez consulter [cette page](https://emmabuntus.org/installer-emmabuntus-de5/#Avec_loutil_Etcher).
+---
 
-A compléter
+## 1. Installation et Configuration Initiale
 
-## 2. Installation des pilotes Nvidia
+L'installation de Linux Mint est la première étape vers une configuration optimisée pour le multimédia et le gaming. Nous avons préparé un tutoriel vidéo qui guide à travers les étapes d'installation, y compris la création d'une clé bootable sous Windows.
 
-A compléter
+**Vidéo en préparation**
 
-## 3. Mettre à jour son système et choisir ses mirroirs
+## 2. Installation des Pilotes Nvidia
 
-Les mises à jour système se font grâce à l'outil dont l'icône en forme de bouclier se trouve en bas de l'écran non loin de l'heure. Au premier démarrage, le boulier sera affiché comme cela : 
-![VirtualBox_Linux Mint fresh install_28_03_2024_19_29_26 (copie)](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/9b77ded4-318f-419c-ae66-d75bbe22197a)
+L'installation des pilotes Nvidia est essentielle pour garantir une performance optimale dans vos jeux et applications.
 
-Cela signifie qu'une action est nécessaire pour maintenir à jour le système. En cliquant dessus, vous accéderez à l'outil et lors de la première ouverture, une page expliquant le fonctionnement de l'outil sera affichée et il faudra la valider. Une fois fait, l'outil va vérifier si des mises à jour sont disponibles et également proposer d'utiliser un miroir local :
+**guide en préparation**
 
-![VirtualBox_Linux Mint fresh install_28_03_2024_19_29_42-2](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/b3b0c487-4554-499d-b538-2def8cabf598)
+## 3. Mise à Jour du Système et Choix des Miroirs
 
-Ce qui est recommandé, notamment pour booster le téléchargement des paquets qui peut être assez lent avec les dépôts de base. En cliquant sur `Oui`, votre mot de passe sera demandé et vous aurez alors accès à l'outil `Sources de logiciels` (fenêtre de gauche) :
+Après l'installation, la première étape consiste à mettre à jour votre système. L'outil de mise à jour, symbolisé par un bouclier dans la barre des tâches, vous guide à travers ce processus.
 
-![LM-mirroir-depot](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/be22803d-7772-4cb1-914b-ed59475da299)
+- **Outil de mise à jour**:
 
-La fenêtre de droite qui permet de connaître le mirroir le plus rapide, apparaitra en cliquant simplement sur l'adresse d'un des mirroirs. 
+![Outil de mise à jour](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/9b77ded4-318f-419c-ae66-d75bbe22197a)
 
-Le mieux est de prendre celui du haut en le sélectionnant et en validant par `Appliquer`. Une fois que c'est fait, un bandeau bleu apparaitra pour demander de rafraichir le cache APT, cliquez sur `Valider`. Vous pouvez maintenant fermer l'outil `Sources de logiciels` et procéder aux mises à jour. Si le bouclier passe au blanc comme ceci 
-![LM-bouclier-blanc](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/16e52cdf-1e43-468e-b7f7-148abbfa6aaf), c'est que tout est à jour ! Si la précédente icône apparait à nouveau, c'est tout simplement car de nouvelles mises à jour sont disponibles.
+- **Choix d'un miroir local**:
 
-Pour finir, dans le cas où vous n'auriez pas configuré un mirroir ou que vous souhaitez vérifier si les résultats ont changé, vous pouvez ouvrir l'outil `Sources de logiciels` via le menu `Edition > Sources de logiciels`.
+![Choix d'un miroir local](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/b3b0c487-4554-499d-b538-2def8cabf598)
 
-## 4. Modifier le vm.max_map_count (à faire jusqu'à la version 22 de Linux Mint)
+- **Sources de logiciels**:
 
-Pour cela, il faut ouvrir un Terminal et taper : `sudo nano /etc/sysctl.conf`
+![Sources de logiciels](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/be22803d-7772-4cb1-914b-ed59475da299)
 
-Dans ce fichier, il faut uniquement ajouter la ligne suivante : `vm.max_map_count=2147483642`
+- **Mise à jour effectuée**:
 
-Une fois fait, quitter le fichier en faisant `CTRL+X` et répondre oui pour sauvegarder.
-Maintenant, il suffit de rédemarrer le PC et le tour est joué !
+![Mise à jour effectuée](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/16e52cdf-1e43-468e-b7f7-148abbfa6aaf)
 
-A noter qu'il est possible de vérifier que la valeur a bien été prise en compte en tapant dans un terminal la commande suivante : `sysctl vm.max_map_count`
-Ce qui devrait renvoyer cette réponse : `vm.max_map_count = 2147483642`
+## 4. Modification du Paramètre vm.max_map_count
 
-Cette étape ne sera plus nécessaire avec la version 22.
+Pour optimiser la compatibilité et les performances des jeux, sur les versions de Linux Mint antérieures à la 22, il est conseillé d'augmenter la valeur de `vm.max_map_count`.
 
-## 5. Installer les logiciels
+Dans un terminal, exécutez :
 
-Une logithèque est mise à disposition sur Linux Mint pour installer vos applications. Pour accéder à celle-ci, il vous faut aller dans dans le menu des applications (1) et cliquer sur cette icône (2) :
+```sh
+echo 'vm.max_map_count=1048576' | sudo tee -a /etc/sysctl.conf
+```
 
-![LM-acces-logitheque](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/ad2a9e25-274a-48fb-983d-f4e8d470ea7c)
+Cette modification permet d'améliorer la gestion des ressources pour les jeux nécessitant un grand nombre de mappages de fichiers virtuels, essentiel pour une expérience de jeu fluide et sans interruption.
 
-Une fois ouverte, cela ressemblera à ceci :
+## 5. Installation de Logiciels pour Gaming
 
-![LM-logitheque-accueil](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/84b0a680-438e-455d-9951-7647504b6b55)
+La logithèque de Linux Mint offre un accès à de nombreuses applications essentielles pour le gaming, comme Steam.
 
-A partir de là, vous pouvez parcourir la liste des applications proposées ou faire une recherche ciblée. Par exemple, pour la partie gaming, vous aurez besoin d'installer Steam, il suffit donc de rechercher celui-ci :
+- **Accès à la logithèque**:
 
-![LM-logitheque-steam](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/35f8db07-d685-44cd-b927-f59f5cf0816b)
+![Accès à la logithèque](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/ad2a9e25-274a-48fb-983d-f4e8d470ea7c)
 
-Ici, on peut voir plusieurs résultats et c'est les deux premiers qui vont nous intéresser. Le premier est un paquet système, c'est à dire un paquet dans les dépôts de la distribution et donc valider par celle-ci. Le second avec la mention "flatpak" est un paquet universel venant de flathub.
+- **Page d'accueil de la logithèque**:
 
-Les deux paquets vont fonctionner mais il est bon à noter de façons générales les points suivants :
-- Les paquets systèmes sont souvent plus vieux (mais certains comme steam ont un système de mise à jour indépendant) et fonctionnent avec ce qui est installé sur le système ou fait ajouter des composants à votre système pour tourner.
-- Les paquets flatpak tournent avec leur propre environnement et embarque tout avec eux (ce qui fait que leur taille est plus importante) et sont fournis dans la dernière version stable publiée et fonctionnent de la même manière avec toutes les distributions. Ils ont aussi l'avantage de faire venir la dernière version de Mesa, ce qui est intéressant quand on utilise de l'Intel / AMD. En revanche, ils ont un accès limité au système, ce qui sécurise d'un côté mais rend certaines actions plus compliquées, notamment l'accès aux disques secondaires (voir [page suivante](https://github.com/Gaming-Linux-FR/glf-astuces?tab=readme-ov-file#acc%C3%A8s-%C3%A0-un-second-disque-sur-steam-flatpak)).
+![Page d'accueil de la logithèque](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/84b0a680-438e-455d-9951-7647504b6b55)
 
-Le choix pour l'application en exemple vous revient. Ceci dit, le flatpak sera de mise pour d'autres applications comme :
+- **Recherche de Steam**:
 
-- Heroic Launcher (pour l’Epic Games Store, GOG ou Amazon Prime Gaming) qui n'est proposé qu'en flatpak.
-- Lutris (Battle.net, Ubisoft Connect, EA App etc…) car le paquet système n'est pas à jour.
+![Recherche de Steam](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/35f8db07-d685-44cd-b927-f59f5cf0816b)
 
-A noter que pour bien paramétrer Steam, vous pouvez suivre le [tuto suivant](https://github.com/Gaming-Linux-FR/steam-post-install?tab=readme-ov-file#steam-linux-post-installation).
+Lors de l'installation de logiciels pour le gaming sur Linux Mint via la logithèque, vous rencontrerez souvent deux types de paquets pour une même application : les paquets système et les Flatpak. Voici une explication concise pour vous aider à choisir le plus adapté à vos besoins :
 
-## 6. Désactivation de la composition des fenêtres
+- **Paquets système** : Directement issus des dépôts officiels de la distribution, ils sont intégrés au système et peuvent ne plus être à jour. Pour certaines applications comme Steam, qui se mettent à jour indépendamment, cela ne pose pas de problème. Ces paquets utilisent les librairies déjà installées sur votre système.
+  
+- **Paquets Flatpak** : Ces paquets sont conteneurisés et s'exécutent dans leur propre environnement, incluant toutes leurs dépendances. Ils offrent généralement les versions les plus récentes des applications et garantissent une compatibilité trans-distribution. Les Flatpaks sont particulièrement utiles pour des logiciels nécessitant la dernière version de Mesa, comme c'est souvent le cas pour les utilisateurs de cartes graphiques Intel ou AMD. Cependant, leur isolement du système peut compliquer l'accès à certains périphériques, comme les disques durs secondaires.
 
-Désactiver la composition des fenêtres en plein écran (type jeu) permet d'avoir de meilleures performances.
-Pour cela, il faut ouvrir le menu des applications (1) et ouvrir les paramètres système (2) :
+Pour les applications critiques pour le gaming telles que **Heroic Launcher** (pour l’Epic Games Store, GOG, ou Amazon Prime Gaming) et **Lutris** (pour Battle.net, Ubisoft Connect, EA App, etc.), le format Flatpak est souvent préféré sur les distribution stable car il assure la disponibilité de la dernière version, alors que le paquet système peut ne pas être à jour voir obsolète.
 
-![LM-desactivation-compo1](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/a4790345-ced0-459f-894b-7b4e79f649cf)
+Chaque choix a ses avantages et inconvénients, et le meilleur dépend de vos besoins spécifiques en matière de gaming sur Linux.
 
-Puis aller dans `Général` :
+[**Guide STEAM** sur Linux](https://github.com/Gaming-Linux-FR/steam-post-install?tab=readme-ov-file#steam-linux-post-installation).
 
-![LM-desactivation-compo2](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/6abede6b-faba-48b8-a1e6-0409f5e3aa48)
+## 6. Optimisation des Performances de Jeu
 
-Puis cocher l'option ci-dessous :
+Pour améliorer les performances en jeu, il est conseillé de désactiver la composition des fenêtres pour les applications en plein écran.
 
-![LM-desactivation-compo3](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78)
+- **Désactivation de la composition**:
+
+![Désactivation de la composition](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/a4790345-ced0-459f-894b-7b4e79f649cf), 
+
+![Suite](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/6abede6b-faba-48b8-a1e6-0409f5e3aa48), 
+
+![Option à cocher](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78)
+
+## 7. Dépannage et Conseils
+
+Ce guide vise à offrir une introduction complète à l'utilisation de Linux Mint pour le gaming et le multimédia. Pour des problèmes spécifiques, n'hésitez pas à rejoindre notre discord : 
+
+[![Rejoignez notre Discord](https://img.shields.io/badge/Discord-Rejoignez%20notre%20serveur-blue?style=for-the-badge&logo=discord)](https://discord.gg/WCAKxxRA3t)
+
+---
+
+Ce guide est destiné à être régulièrement mis à jour. Vos retours et contributions sont les bienvenus pour aider à enrichir cette ressource et assister d'autres utilisateurs dans leur expérience Linux Mint.
