@@ -59,6 +59,19 @@ _Le pilote nouveau est sélectionné par défaut._
 
 ![Mint_Nvidia_Tool_5](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/62f3d086-5b2b-427d-bfe1-b1ee4b173a69)
 
+- **Aucun driver n'est proposé pour ma carte Nvidia**
+
+Il peut arriver qu'aucun driver soit proposé pour une carte Nvidia, notamment si la carte est récente. Dans ce cas, c'est souvent un problème lié à la reconnaissance de celle-ci, ce qui fait que même si le driver est potentiellement existant, rien n'est proposé en dehors du driver de base `nouveau`. Exemple ci-dessous avec une carte RTX 4070 SUPER :
+
+![Nvidia-nouveau-only](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d54d09c4-5427-430d-a4c5-105cfc4764fd)
+
+Il est alors possible de se rendre ici pour voir les drivers installables pour notre carte graphique : https://www.nvidia.com/fr-fr/geforce/drivers/
+
+Le 550 et 535 sont les possibilités proposées. Pour voir les drivers existants sous Mint, taper cette commande dans un terminal : `apt search nvidia-driver`
+
+Il faut alors regarder les résultats du type `nvidia-driver-535` tout court. Pour le cas ici, Mint propose uniquement le driver 535 et il faudra donc ouvrir un terminal et taper : `sudo apt install nvidia-driver-535`
+
+Et une fois le driver installé, il suffit de redémarrer.
 
 --- 
 
