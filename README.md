@@ -141,7 +141,7 @@ Voici une explication concise pour vous aider à choisir le plus adapté à vos 
   
 - **Paquets Flatpak** : Ces paquets sont conteneurisés et s'exécutent dans leur propre environnement, incluant toutes leurs dépendances. Ils offrent généralement les versions les plus récentes des applications et garantissent une compatibilité trans-distribution. Les Flatpaks sont particulièrement utiles pour des logiciels nécessitant la dernière version de Mesa, comme c'est souvent le cas pour les utilisateurs de cartes graphiques Intel ou AMD. Cependant, leur isolement du système peut compliquer l'accès à certains périphériques, comme les disques durs secondaires.
 
-Pour les applications critiques pour le gaming telles que **Heroic Launcher** (pour l’Epic Games Store, GOG, ou Amazon Prime Gaming) et **Lutris** (pour Battle.net, Ubisoft Connect, EA App, etc.), le format Flatpak est souvent préféré sur les distributions stables car il assure la disponibilité de la dernière version, alors que le paquet système peut ne pas être à jour, voir obsolète.
+Pour les applications critiques pour le gaming telles que **Heroic Games Launcher** (pour l’Epic Games Store, GOG, ou Amazon Prime Gaming) et **Lutris** (pour Battle.net, Ubisoft Connect, EA App, etc.), le format Flatpak est souvent préféré sur les distributions stables car il assure la disponibilité de la dernière version, alors que le paquet système peut ne pas être à jour, voir obsolète.
 
 Chaque choix a ses avantages et inconvénients, et le meilleur dépend de vos besoins spécifiques en matière de gaming sur Linux.
 
