@@ -24,7 +24,11 @@ Bienvenue dans ce guide détaillé pour configurer Linux Mint, pour le multiméd
 
 L'installation de Linux Mint est la première étape vers une configuration optimisée pour le multimédia et le gaming. Nous avons préparé un tutoriel vidéo qui guide à travers les étapes d'installation, y compris la création d'une clé bootable sous Windows.
 
-**Vidéo en préparation** 
+**Vidéos montrant l'installation et la configuration :** 
+
+- [Installer & Configurer Linux Mint à 100% pour du Gaming (avec AMD) par Vinceff](https://www.youtube.com/watch?v=embv0s3_C8c)
+- [Linux Mint Gaming Nvidia Challenge / Tuto par Cardiac](https://www.youtube.com/watch?v=D0YQ11hwBXQ)
+
 
 --- 
 
