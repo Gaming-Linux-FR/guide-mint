@@ -2,8 +2,6 @@
 
 Bienvenue dans ce guide détaillé pour configurer Linux Mint, pour le multimédia et le gaming. Voici une approche étape par étape pour tirer le meilleur parti de votre système.
 
---- 
-
 <br>
 
 ## Table des Matières
@@ -11,12 +9,11 @@ Bienvenue dans ce guide détaillé pour configurer Linux Mint, pour le multiméd
 1. [Installation et Configuration Initiale](#1-installation-et-configuration-initiale)
 2. [Installation des Pilotes Nvidia](#2-installation-des-pilotes-nvidia)
 3. [Mise à Jour du Système et Choix des Miroirs](#3-mise-à-jour-du-système-et-choix-des-miroirs)
-4. [Modification du Paramètre vm.max_map_count](#4-modification-du-paramètre-vmmax_map_count)
+4. [Modification du Paramètre vm.max_map_count](#4-modification-du-paramètre-vm-max_map_count)
 5. [Installation de Logiciels pour Gaming](#5-installation-de-logiciels-pour-gaming)
 6. [Optimisation des Performances de Jeu](#6-optimisation-des-performances-de-jeu)
-7. [Dépannage et Conseils](#7-dépannage-et-conseils)
-
---- 
+7. [Guides divers](#7-guides-divers)
+8. [Dépannage et Conseils](#8-dépannage-et-conseils)
 
 <br>
 
@@ -29,9 +26,6 @@ L'installation de Linux Mint est la première étape vers une configuration opti
 - [Installer & Configurer Linux Mint à 100% pour du Gaming (avec AMD) par Vinceff](https://www.youtube.com/watch?v=embv0s3_C8c)
 - [Linux Mint Gaming Nvidia Challenge / Tuto par Cardiac](https://www.youtube.com/watch?v=D0YQ11hwBXQ)
 
-
---- 
-
 <br>
 
 ## 2. Installation des Pilotes Nvidia
@@ -41,33 +35,33 @@ L'installation des pilotes Nvidia est essentielle pour garantir une performance 
 
 - **Lancement du gestionnaire de pilotes**
 
-![Mint_Nvidia_Tool_1](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/72a5260e-0d15-4c98-bfef-be818e755455)
+![Mint_Nvidia_Tool_1](images/1nvidia.png)
 
 
 - **Recherche des pilotes sur votre machine**
 
-![Mint_Nvidia_Tool_2](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/59adf9bc-aa95-4b69-a784-c76c28e72bc8)
+![Mint_Nvidia_Tool_2](images/2nvidia.png)
 
 
 - **Liste des pilotes trouvés par le gestionnaire**
   
 _Le pilote nouveau est sélectionné par défaut._
 
-![Mint_Nvidia_Tool_3](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/e1d204d1-cdca-4f4a-a0fb-3fef3c95061f)
+![Mint_Nvidia_Tool_3](images/3nvidia.png)
 
 - **Sélectionnez la version du pilote désirée**
 
-![Mint_Nvidia_Tool_4](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/3ce5abc2-e73f-483e-82ba-3451f6a5926d)
+![Mint_Nvidia_Tool_4](images/4nvidia.png)
 
 - **Le gestionnaire procède à l'installation et vous invite à redémarrer.**
 
-![Mint_Nvidia_Tool_5](https://github.com/Gaming-Linux-FR/guide-mint/assets/163353265/62f3d086-5b2b-427d-bfe1-b1ee4b173a69)
+![Mint_Nvidia_Tool_5](images/5nvidia.png)
 
 - **Aucun driver n'est proposé pour ma carte Nvidia**
 
 Il peut arriver qu'aucun driver soit proposé pour une carte Nvidia, notamment si la carte est récente. Dans ce cas, c'est souvent un problème lié à la reconnaissance de celle-ci, ce qui fait que même si le driver est potentiellement existant, rien n'est proposé en dehors du driver de base `nouveau`. Exemple ci-dessous avec une carte RTX 4070 SUPER :
 
-![Nvidia-nouveau-only](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d54d09c4-5427-430d-a4c5-105cfc4764fd)
+![Nvidia-nouveau-only](images/6nvidia.png)
 
 Il est alors possible de se rendre ici pour voir les drivers installables pour notre carte graphique : https://www.nvidia.com/fr-fr/geforce/drivers/
 
@@ -77,8 +71,6 @@ Il faut alors regarder les résultats du type `nvidia-driver-535` tout court. Po
 
 Et une fois le driver installé, il suffit de redémarrer.
 
---- 
-
 <br>
 
 ## 3. Mise à Jour du Système et Choix des Miroirs
@@ -87,21 +79,23 @@ Après l'installation, la première étape consiste à mettre à jour votre syst
 
 - **Outil de mise à jour**:
 
-![Outil de mise à jour](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/9b77ded4-318f-419c-ae66-d75bbe22197a)
+![Outil de mise à jour](images/7MAJ.png)
 
 - **Choix d'un miroir local**:
 
-![Choix d'un miroir local](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/b3b0c487-4554-499d-b538-2def8cabf598)
+![Choix d'un miroir local](images/8depots.png)
 
 - **Sources de logiciels**:
 
-![Sources de logiciels](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/be22803d-7772-4cb1-914b-ed59475da299)
+![Sources de logiciels](images/9depots.png)
 
 - **Mise à jour effectuée**:
 
-![Mise à jour effectuée](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/16e52cdf-1e43-468e-b7f7-148abbfa6aaf)
+![Mise à jour effectuée](images/10MAJ.png)
 
---- 
+- **Mise à niveau (changement de version)**:
+
+Voir [page suivante](upgrade.md).
 
 <br>
 
@@ -127,15 +121,15 @@ La logithèque de Linux Mint offre un accès à de nombreuses applications essen
 
 - **Accès à la logithèque**:
 
-![Accès à la logithèque](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/ad2a9e25-274a-48fb-983d-f4e8d470ea7c)
+![Accès à la logithèque](images/11logitheque.png)
 
 - **Page d'accueil de la logithèque**:
 
-![Page d'accueil de la logithèque](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/84b0a680-438e-455d-9951-7647504b6b55)
+![Page d'accueil de la logithèque](images/12logitheque.png)
 
 - **Recherche de Steam**:
 
-![Recherche de Steam](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/35f8db07-d685-44cd-b927-f59f5cf0816b)
+![Recherche de Steam](images/13logitheque-steam.png)
 
 Lors de l'installation de logiciels pour le gaming sur Linux Mint via la logithèque, vous rencontrerez souvent deux types de paquets pour une même application : les paquets système et les Flatpak. 
 
@@ -149,7 +143,7 @@ Pour les applications critiques pour le gaming telles que **Heroic Games Launche
 
 Chaque choix a ses avantages et inconvénients, et le meilleur dépend de vos besoins spécifiques en matière de gaming sur Linux.
 
-[**Guide STEAM** sur Linux](https://github.com/Gaming-Linux-FR/steam-post-install?tab=readme-ov-file#steam-linux-post-installation).
+[**Guide STEAM** sur Linux](https://codeberg.org/Gaming-Linux-FR/steam-post-install#readme).
 
 --- 
 
@@ -161,21 +155,25 @@ Pour améliorer les performances en jeu, il est conseillé de désactiver la com
 
 - **Désactivation de la composition**:
 
-![Désactivation de la composition](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/a4790345-ced0-459f-894b-7b4e79f649cf), 
+![Désactivation de la composition](images/14compo.png), 
 
 Allez dans Général :
 
-![Suite](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/6abede6b-faba-48b8-a1e6-0409f5e3aa48),
+![Suite](images/15parametres.png),
 
 Cochez l'option "Désactiver la composition pour les fenêtres en plien écran"
 
-![Option à cocher](https://github.com/Gaming-Linux-FR/guide-mint/assets/21110485/d89d66ce-6ebb-4970-b6f9-b3f6aa58bc78)
-
---- 
+![Option à cocher](images/16compo.png)
 
 <br>
 
-## 7. Dépannage et Conseils
+## 7. Guides divers
+
+- **[Formater et monter un disque](/Gaming-Linux-FR/guide-formater-monter)** : Formater et monter au démarrage ses disques / SSD internes sur Linux
+- **[Astuces](/Gaming-Linux-FR/glf-astuces)** : Astuces diverses, ne concernant pas une distribution spécifique.
+
+
+## 8. Dépannage et Conseils
 
 Ce guide vise à offrir une introduction complète à l'utilisation de Linux Mint pour le gaming et le multimédia. Pour des problèmes spécifiques, n'hésitez pas à rejoindre notre discord : 
 
